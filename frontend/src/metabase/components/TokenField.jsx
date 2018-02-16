@@ -389,14 +389,14 @@ export default class TokenField extends Component {
 
         const valuesList =
           <ul
-              className={cx("m1 p0 bordered rounded flex flex-wrap bg-white", {inputBoxClasses}, {
+              className={cx("m1 p0 pb1 bordered rounded flex flex-wrap bg-white", inputBoxClasses, {
                 [`border-grey-2`]: this.state.focused
               })}
               style={this.props.style}
               onMouseDownCapture={this.onMouseDownCapture}
           >
               {value.map((v, index) =>
-                  <li key={v} className={`mt1 mb1 ml1 py1 pl2 pr1 rounded bg-grey-5percent`}>
+                  <li key={v} className={`mt1 ml1 py1 pl2 pr1 rounded bg-grey-5percent`}>
                       <span className="text-bold">
                         {valueRenderer(v)}
                       </span>
